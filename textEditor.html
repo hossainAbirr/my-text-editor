@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my text editor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5362ce4a5d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="mb-10 ">
+      <!-- all container  -->
+      <div class="flex w-full h-full justify-center items-center">
+        <!-- outer div  -->
+        <div
+          class="w-full h-full bg-blue-300 flex flex-col justify-center items-center"
+        >
+          <h1 class="font-semibold text-2xl mt-3">My Text Editor</h1>
+          <!-- inside  -->
+          <div
+            class="w-11/12 h-full bg-blue-200 mt-3 mb-10 border-2 border-black"
+          >
+            <!-- icon container  -->
+            <div
+              class="flex justify-between mx-5 px-2 py-5 border-b-2 border-black"
+            >
+              <!-- icon container inside container  -->
+              <!-- bold,italic , underline  -->
+              <div class="flex gap-3">
+                <div>
+                  <button id="btn-bold" class="btn">
+                    <span id="bold"><i class="fa-solid fa-b"></i></span>
+                  </button>
+                </div>
+                <div>
+                  <button id="btn-italic" class="btn">
+                    <span id="italic"><i class="fa-solid fa-italic"></i></span>
+                  </button>
+                </div>
+                <div>
+                  <button id="btn-underline" class="btn">
+                    <span id="underline"
+                      ><i class="fa-solid fa-underline"></i
+                    ></span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- text align  -->
+              <div class="flex gap-3">
+                <div>
+                  <button id="btn-left" class="btn">
+                    <span id="left"
+                      ><i class="fa-solid fa-align-left"></i
+                    ></span>
+                  </button>
+                </div>
+                <div>
+                  <button id="btn-center" class="btn">
+                    <span id="center"
+                      ><i class="fa-solid fa-align-center"></i
+                    ></span>
+                  </button>
+                </div>
+                <div>
+                  <button id="btn-right" class="btn">
+                    <span id="right"
+                      ><i class="fa-solid fa-align-right"></i
+                    ></span>
+                  </button>
+                </div>
+                <div>
+                  <button id="btn-justify" class="btn">
+                    <span id="justify"
+                      ><i class="fa-solid fa-align-justify"></i
+                    ></span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- size and colour  -->
+              <div class="flex gap-3">
+                <div>
+                  <span></span>
+                  <input type="number" value="16" name="" id="text-size" />
+                </div>
+                <div>
+                  <input type="color" name="" id="text-colour" />
+                </div>
+                <div></div>
+              </div>
+            </div>
+
+            <!-- textarea container  -->
+            <div class="flex justify-center">
+              <textarea
+                class="m-5 box-border p-4 "
+                name=""
+                id="text-area"
+                cols="150"
+                rows="18"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="textEditor.js"></script>
+  </body>
+</html>
